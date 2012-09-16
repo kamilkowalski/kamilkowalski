@@ -1,0 +1,38 @@
+$blueprint_grid_columns: 8;
+$blueprint_grid_width: 120px;
+
+@import "blueprint";
+
+#container {
+	@include container;
+
+	#header, #footer, #content { @include column(8); }
+
+	#header {
+		margin-top: 20px;
+	}
+}
+
+#logo {
+	@include float-left;
+
+	span {
+		display: block;
+		margin-top: -8px;
+	}
+}
+
+#menu {
+	@include inline-block-list;
+	@include float-right;
+	margin-top: 15px;
+
+	li {
+		padding: 0 10px;
+	}
+}
+
+#greeting {
+	text-align: center;
+	margin: 80px auto;
+}
