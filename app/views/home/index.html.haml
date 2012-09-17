@@ -1,15 +1,7 @@
 #greeting
-	%p
-		Hi, I'm Kamil Kowalski - a Polish 
-		%strong Ruby on Rails 
-		developer.
-	%p
-		I create simple
-		%strong web applications 
-		and modify existing projects.
-		%br
-		I can also help you out with your 
-		%strong Joomla! 
-		and 
-		%strong WordPress 
-		website.
+	=t ".hello_html"
+	=t ".hello2_html"
+
+#social
+	.container
+		=t ".social_html", :github => link_to("GitHub", "https://github.com/kamilkowalski", :id => "github", :target => "_blank"), :elance => link_to("Elance", "https://www.elance.com/s/kam_kowalski", :id => "elance", :target => "_blank")

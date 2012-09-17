@@ -1,17 +1,22 @@
 $blueprint_grid_columns: 8;
 $blueprint_grid_width: 120px;
 
+$bg_light: #FFF;
+$bg_darker: #EEE;
+$bg_darkest: #222;
+
 @import "blueprint";
 
-#container {
-	@include container;
+body, html { background-color: $bg_darkest; }
 
-	#header, #footer, #content { @include column(8); }
+.container { @include container; }
 
-	#header {
-		margin-top: 20px;
-	}
+#header, #content, #footer {
+	background-color: $bg_light;
+	padding-top: 1px;
 }
+
+#header { padding-top: 20px; }
 
 #logo {
 	@include float-left;
@@ -21,6 +26,14 @@ $blueprint_grid_width: 120px;
 		margin-top: -8px;
 	}
 }
+
+#social {
+	background-color: $bg_darker;
+	padding: 20px 0;
+	text-align: center;
+}
+
+#footer { background-color: $bg_darkest; }
 
 #menu {
 	@include inline-block-list;
@@ -34,5 +47,14 @@ $blueprint_grid_width: 120px;
 
 #greeting {
 	text-align: center;
-	margin: 80px auto;
+	margin: 80px auto 40px;
+}
+
+#github {
+	@include kk-button-cta-icon(32px);
+	background-image: image-url("github.png"); 
+}
+
+#elance {
+	@include kk-button-cta;
 }

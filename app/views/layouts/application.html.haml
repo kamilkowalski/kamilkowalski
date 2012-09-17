@@ -1,18 +1,19 @@
 !!! 5
 %html
 	%head
-		%title Kamil Kowalski - a web applications developer
+		%title= t :title
 		= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,latin-ext", :media => "all"
 		= stylesheet_link_tag "application", :media => "all"
 		= javascript_include_tag "application"
 		= csrf_meta_tags
 
 	%body
-		#container
-			#header
+		#header
+			.container
 				#logo
-					Kamil Kowalski
-					%span web-developer
-				= render "shared/menu"
-			#content= yield
-			#footer= render "shared/footer"
+					=t :logo
+					%span= t :sub
+				%nav= render "shared/menu"
+		#content= yield
+		#footer
+			.container= render "shared/footer"

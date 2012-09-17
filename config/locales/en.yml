@@ -2,4 +2,17 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  title: "Kamil Kowalski - a web application developer"
+  logo: "Kamil Kowalski"
+  sub: "web-developer"
+  nav:
+    blog: "blog"
+    services: "services"
+    download: "download"
+    references: "references"
+    contact: "contact"
+  home:
+    index:
+        hello_html: "<p>Hi, I'm Kamil Kowalski - a Polish <strong>Ruby on Rails</strong> developer.</p>"
+        hello2_html: "<p>I create simple <strong>web applications</strong> and modify existing projects.<br />I can also help you out with your <strong>Joomla!</strong> or <strong>WordPress</strong> website."
+        social_html: "Take a look at my portfolio and check out my accounts on %{github} and %{elance}"
