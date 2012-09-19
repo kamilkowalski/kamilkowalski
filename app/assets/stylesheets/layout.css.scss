@@ -33,7 +33,10 @@ body, html { background-color: $bg_darkest; }
 	text-align: center;
 }
 
-#footer { background-color: $bg_darkest; }
+#footer { 
+	background-color: $bg_darkest;
+	padding: 16px 0;
+}
 
 #menu {
 	@include inline-block-list;

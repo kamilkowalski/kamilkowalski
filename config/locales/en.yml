@@ -5,6 +5,7 @@ en:
   title: "Kamil Kowalski - a web application developer"
   logo: "Kamil Kowalski"
   sub: "web-developer"
+  copyright: "© %{year} Kamil Kowalski. All rights reserved."
   nav:
     blog: "blog"
     services: "services"
