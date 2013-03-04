@@ -4,6 +4,7 @@ $blueprint_grid_width: 120px;
 $bg_light: #FFF;
 $bg_darker: #EEE;
 $bg_darkest: #222;
+$bg_lightblue: #019ac5;
 
 @import "blueprint";
 
@@ -28,7 +29,7 @@ body, html { background-color: $bg_darkest; }
 }
 
 #social {
-	background-color: $bg_darker;
+	background-color: $bg_lightblue;
 	padding: 20px 0;
 	text-align: center;
 }
@@ -53,11 +54,7 @@ body, html { background-color: $bg_darkest; }
 	margin: 80px auto 40px;
 }
 
-#github {
-	@include kk-button-cta-icon(32px);
-	background-image: image-url("github.png"); 
-}
-
-#elance {
+#github, #elance {
 	@include kk-button-cta;
+	margin: 0 6px;
 }

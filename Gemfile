@@ -1,20 +1,19 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.5'
+gem 'rails', '3.2.11'
 
-group :production do
+group :production, :development do
 	gem 'pg'
 end
 
-group :development, :test do
+group :test do
 	gem 'sqlite3'
-	gem 'debugger'
 end
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'sass-rails',   '~> 3.2'
+  gem 'coffee-rails', '~> 3.2'
+  gem 'uglifier', '~> 1.0'
   gem 'compass-rails'
   gem 'compass-normalize'
 end
@@ -22,3 +21,5 @@ end
 gem 'jquery-rails'
 gem 'haml-rails'
 gem 'kaminari'
+gem 'bcrypt-ruby'
+gem 'therubyracer'

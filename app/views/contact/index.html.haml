@@ -1,0 +1,4 @@
+.container
+	= t '.desc_html'
+	= form_tag 'contact/create' do
+		= text_field :email, :placeholder => t('.email')

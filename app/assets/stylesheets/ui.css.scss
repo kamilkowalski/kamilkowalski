@@ -1,12 +1,16 @@
 $kk_button_border_color: #EEE;
-$kk_button_background_color: #0194be;
+$kk_button_background_color: #007293;
 $kk_button_font_color: #FFF;
 
 $kk_button_padding_vertical: 8px;
 $kk_button_padding_horizontal: 2px;
 
+@mixin kk-transition($prop, $duration, $ease: ease-out){
+	-webkit-transition: $prop $duration $ease;
+	transition: $prop $duration $ease;
+}
+
 @mixin kk-button-base {
-	border: 1px solid $kk_button_border_color;
 	display: inline-block;
 	background-color: $kk_button_background_color;
 	color: $kk_button_font_color;
@@ -18,6 +22,8 @@ $kk_button_padding_horizontal: 2px;
 		background-color: darken($kk_button_background_color, 10%);
 		@include text-shadow(1px 1px 0 darken($kk_button_background_color, 20%));
 	}
+
+	@include kk-transition(background-color, 0.25s);
 }
 
 @mixin kk-button-icon($padding_left: 32px) {

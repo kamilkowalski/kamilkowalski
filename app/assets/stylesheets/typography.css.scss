@@ -3,9 +3,16 @@ $color_light: #666;
 $color_inverse: #FFF;
 $color_emphasis: #0194be;
 
+$base_font_size: 17px;
+$base_font_weight: 400;
+$font_weight_semibold: 600;
+$font_weight_bold: 700;
+
+$bg_lightblue: #019ac5;
 
 html, body {
-	font-family: "Open Sans";
+	font-family: "Source Sans Pro";
+	font-size: $base_font_size;
 	color: $color_regular;
 }
 
@@ -45,5 +52,11 @@ a:hover {
 
 #footer {
 	color: $color_inverse;
-	font-size: 10px;
+	font-size: $base_font_size * 0.8;
+}
+
+#social {
+	color: #FFF;
+	font-weight: $font_weight_semibold;
+	text-shadow: 1px 1px 2px darken($bg_lightblue, 10%);
 }
