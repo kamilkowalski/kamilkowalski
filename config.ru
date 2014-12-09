@@ -1,3 +1,4 @@
 require './kamilkowalski'
+require './api'
 
-run Sinatra::Application
+run Rack::Cascade.new([Kamilkowalski, Api])
