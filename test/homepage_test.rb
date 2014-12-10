@@ -1,14 +1,8 @@
-ENV['RACK_ENV'] = 'test'
-
-require './kamilkowalski'
-require 'test/unit'
-require 'rack/test'
+require File.join(File.dirname(__FILE__), 'test_helper')
 
 class HomepageTest < Test::Unit::TestCase
-  include Rack::Test::Methods
-
   def app
-    Kamilkowalski
+    Site
   end
 
   def test_home_page_content

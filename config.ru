@@ -1,4 +1,4 @@
-require './kamilkowalski'
-require './api'
+require './app/site'
+require './app/api'
 
-run Rack::Cascade.new([Kamilkowalski, Api])
+run Rack::Cascade.new([Api, Site])

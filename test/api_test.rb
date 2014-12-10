@@ -1,23 +1,35 @@
-ENV['RACK_ENV'] = 'test'
-
-require './api'
-require 'test/unit'
-require 'rack/test'
+require File.join(File.dirname(__FILE__), 'test_helper')
 
 class ApiTest < Test::Unit::TestCase
-  include Rack::Test::Methods
-
   def app
     Api
   end
 
-  def test_status_codes
-    methods = %w(methods personal education experience references achievements skills interests)
+  def cv
+    @cv ||= JSON.load(File.new('./app/cv.json'))
+  end
 
-    methods.each do |m|
-      get "/#{m}"
+  def json_response
+    JSON.parse(last_response.body)
+  end
+
+  def test_status_codes
+    (['methods'] + Api.methods).each do |m|
+      get "/api/#{m}"
       assert last_response.ok?
       assert_equal 'application/json', last_response.headers['Content-Type']
+    end
+  end
+
+  def test_methods_call
+    get '/api/methods'
+    assert_equal Api.methods, json_response
+  end
+
+  def test_data_calls
+    Api.methods.each do |m|
+      get "/api/#{m}"
+      assert_equal cv[m], json_response
     end
   end
 end

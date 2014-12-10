@@ -1,0 +1,138 @@
+{
+  "personal": {
+    "name": "Kamil Kowalski",
+    "occupation": "Web Application Developer",
+    "email": "kamil@kamilkowalski.pl",
+    "date_of_birth": "1989-04-05T08:00:00",
+    "location": {
+      "name": "Warsaw, Poland",
+      "lat": 52.229676,
+      "long": 21.012229
+    },
+    "website": "http://www.kamilkowalski.pl/",
+    "email": "kamil@kamilkowalski.pl"
+  },
+  "education": [
+    {
+      "title": "BEng",
+      "course": "Computer Science",
+      "school": {
+        "name": "Polish-Japanese Institute of Information Technology",
+        "location": "Warsaw, Poland",
+        "website": "http://www.pja.edu.pl/"
+      },
+      "period": [2012, 2016]
+    },
+    {
+      "title": "BA",
+      "course": "Applied Linguistics: French and English Translation",
+      "school": {
+        "name": "University of Silesia",
+        "location": "Katowice, Poland",
+        "website": "http://www.us.edu.pl/"
+      },
+      "period": [2008, 2011]
+    }
+  ],
+  "experience": [
+    {
+      "position": "Ruby on Rails Consultant",
+      "company": "Mediateket AS",
+      "location": "Remote",
+      "period": [2014, 2014],
+      "summary": [
+        "Rails development as sub-contractors for SBS Discovery; optimizing code, front-end, documentation"
+      ]
+    },
+    {
+      "position": "CTO",
+      "company": "WebTotal AS",
+      "location": "Oslo, Norway",
+      "period": [2013, 2014],
+      "summary": [
+        "Overseeing and coordinating development on WebOrg, a sports club management system",
+        "System development on WebOrg using Zend Framework and AngularJS",
+        "Setting up WebOrg deployment and addressing scalability issues",
+        "Ruby on Rails development as sub-contractors for SBS Discovery; assets preprocessing and performance"
+      ]
+    },
+    {
+      "position": "Web Developer",
+      "company": "COMID Roman Dziemianko",
+      "location": "Remote",
+      "period": [2008, 2013],
+      "summary": [
+        "PHP extensions development for CMS systems such as Joomla!, WordPress or Typo3, as well as web application development in Zend Framework and CakePHP",
+        "￼￼￼JavaScript UI implementation using MooTools, jQuery and jQuery UI",
+        "Basic CentOS dedicated server administration"
+      ]
+    },
+    {
+      "position": "Freelance Web Application Developer",
+      "company": null,
+      "location": "Remote",
+      "period": [2010, 2013],
+      "summary": [
+        "Android – an order management application, bundled with a Ruby on Rails web interface",
+        "Several cloud-hosted Ruby on Rails projects, including a user-friendly, lightweight CRM application",
+        "Joomla! and WordPress extensions, including custom micro e-commerce extensions, PayPal button plugins and a ticket booking component"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Ole-Christian Eid",
+      "company": "WebTotal AS",
+      "position": "CEO",
+      "email": "ole@webtotal.no"
+    },
+    {
+      "name": "Hugo Mardolcar",
+      "company": "WebTotal AS",
+      "position": "ex-Project Manager",
+      "email": "hugomardolcar@gmail.com"
+    }
+  ],
+  "achievements": [
+    "Microsoft Imagine Cup 2014, National Finals: II place in category Innovation"
+  ],
+  "skills": [
+    "Ruby",
+    "Rails",
+    "Heroku",
+    "AWS (S3, Route 53, IAM)",
+    "Sinatra",
+    "PostgreSQL",
+    "Git",
+    "TDD",
+    "Jira",
+    "CI (Jenkins, TeamCity, Travis-CI)",
+    "PHP",
+    "Zend Framework",
+    "MySQL",
+    "Joomla!",
+    "WordPress",
+    "JavaScript",
+    "AngularJS",
+    "CoffeeScript",
+    "Ember.js",
+    "Java",
+    "Android",
+    ".NET",
+    "Windows Phone",
+    "SQLite",
+    "HTML5",
+    "CSS",
+    "Linux",
+    "localization",
+    "English",
+    "French"
+  ],
+  "interests": [
+    "Snowboard, running",
+    "Board games, computer games",
+    "Cooking",
+    "Sci-fi books, manga, miniseries",
+    "Japanese culture and language"
+  ]
+}
