@@ -7,3 +7,6 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Ignore Sass cache
+/.sass-cache

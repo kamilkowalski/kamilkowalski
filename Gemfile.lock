@@ -9,12 +9,14 @@ GEM
     debugger-linecache (1.2.0)
     haml (4.0.6)
       tilt
+    kramdown (1.5.0)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
     rake (10.4.0)
+    sass (3.4.9)
     sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -28,6 +30,8 @@ PLATFORMS
 DEPENDENCIES
   byebug
   haml (~> 4.0.6)
+  kramdown (~> 1.5.0)
   rack-test
   rake
+  sass (~> 3.4.9)
   sinatra (= 1.4.5)
