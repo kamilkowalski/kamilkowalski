@@ -1,16 +1,17 @@
 #header.row
-  #title.column.small-12.medium-6.large-8
+  #title.column.small-12.medium-6.large-7
     %h1 Kamil Kowalski
     %h2 web application developer
-  #menu.column.small-12.medium-6.large-4
+  #menu.column.small-12.medium-6.large-5
     %ul.inline-list
       %li= link_to(content: 'Contact', href: 'mailto:kamil@kamilkowalski.pl')
       %li= link_to(content: 'LinkedIn', href: 'https://www.linkedin.com/pub/kamil-kowalski/67/187/277', target: '_blank')
       %li= link_to(content: 'Elance', href: 'https://www.elance.com/s/kam_kowalski', target: '_blank')
+      %li= link_to(content: 'GitHub', href: 'https://github.com/kamilkowalski/kamilkowalski', target: '_blank')
       %li= link_to(content: 'My CV', href: '/KamilKowalski-CV.pdf', target: '_blank')
 
 #content.row
-  #bio.column.small-12.medium-6
+  #bio.column.small-12.medium-8.medium-centered.text-justify
     :markdown
       Hi, I'm **Kamil Kowalski**. I'm a software developer specializing in web applications.
       I've been working in the web industry **since 2008**, started with PHP apps based on open-source
@@ -25,10 +26,7 @@
       I'm currently looking for a job, having finished my contract at [WebTotal](http://www.webtotal.no/).
       If you're looking for a fun Rails dev who's passionate about what he does, please:
 
-    %a{ href: '/KamilKowalski-CV.pdf', class: 'button radius', target: '_blank' } Check out my CV
-    and then
-    %a{ href: 'mailto:kamil@kamilkowalski.pl', class: 'button radius' } contact me
-  #api.column.small-12.medium-6
-    #api-terminal
-      #api-terminal-output
-      #api-terminal-input
+    .text-center
+      %a{ href: '/KamilKowalski-CV.pdf', class: 'button radius', target: '_blank' } Check out my CV
+      and then
+      %a{ href: 'mailto:kamil@kamilkowalski.pl', class: 'button radius' } contact me

@@ -16,5 +16,8 @@ body {
 
 #content {
   margin-top: 50px; }
+  @media only screen and (max-width: 40em) {
+    #content {
+      margin-top: 10px; } }
 
 /*# sourceMappingURL=style.css.map */
