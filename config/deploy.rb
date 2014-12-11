@@ -4,11 +4,11 @@ lock '3.3.4'
 set :application, 'kamilkowalski'
 set :repo_url, 'git@github.com:kamilkowalski/kamilkowalski.git'
 
-namespace :passenger do
+namespace :deploy do
   desc "Restart app"
   task :restart do
-    run "touch #{current_path}/tmp/restart.txt"
+    on roles(:web), wait: 5 do
+      execute :touch, release_path.join('tmp/restart.txt')
+    end
   end
 end
-
-after :deploy, "passenger:restart"

@@ -10,3 +10,6 @@
 
 # Ignore Sass cache
 /.sass-cache
+
+# Ignore Capistrano metrics
+/.capistrano
