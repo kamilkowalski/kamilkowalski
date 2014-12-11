@@ -14,4 +14,5 @@ group :development do
   gem 'capistrano', '~> 3.3.4'
   gem 'capistrano-bundler', '~> 1.1.3'
   gem 'capistrano-rvm', '~> 0.1.2'
+  gem 'capistrano-passenger', '~> 0.0.1'
 end
